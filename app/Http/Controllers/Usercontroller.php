@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 class Usercontroller extends Controller
 {
-    public function getUserDeatails()
+    public function getUserDetails()
     {
         return response()->json([
             'name' => 'kalpana',
             'role' => 'admin',
-            'create_at' => 'today',
-            'update_at' => 'yesterday',
+            'created_at' => 'today',
+            'updated_at' => 'yesterday',
         ]);
     }
 }
